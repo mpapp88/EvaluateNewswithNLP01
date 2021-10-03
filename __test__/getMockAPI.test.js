@@ -1,4 +1,5 @@
-import { getMockAPI } from "../src/client/js/getMockAPI";
+//import { getMockAPI } from "../src/client/js/getMockAPI";
+import { getMockAPI } from '../src/client';
 import 'babel-polyfill';
 
 describe("Testing MockAPI\'s functionality", () => {

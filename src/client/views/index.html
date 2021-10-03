@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <title>Evaluate News</title>
         <link href="" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
         <!--<link rel="stylesheet" href="/styles/resets.scss">
         <link rel="stylesheet" href="/styles/base.scss">
         <link rel="stylesheet" href="/styles/header.scss">
@@ -15,15 +17,11 @@
     <body>
 
         <header>
-            <div class="Logo">
-                Logo
-            </div>
+        </header>
+        <main>
             <div class="title">
                 <h1>Evaluate News with Natural Language Processing</h1>
             </div>
-        </header>
-
-        <main>
             <div class="intro">
                 <p>Sentiment Analysis is performing a detailed multilingual sentiment analysis of texts from different sources.
                     The text provided is analyzed to determine if it expresses a positive/negative/neutral sentiment; to do this, 
@@ -33,7 +31,7 @@
                     to also detect the polarity associated to both entities and concepts in the text. 
                     It provides a reference in the relevant sentence and a list of elements detected with the aggregated polarity derived from all their appearances, 
                     also taking into account the grammatical structures in which they are contained.</p>
-                <p>To try out this analyzer, enter a valid URL of an article or blog.</p>
+                <h2>To try out this analyzer, enter a valid URL of an article or blog.</h2>
             </div>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
@@ -45,15 +43,15 @@
             <section class="analyzer-result">
                 <h2>Form Results:</h2>
                 <h3>Text polarity:</h3>
-                <p id="polarity"></p>
+                <p id="polarity" class="result"></p>
                 <h3>Text subjectivity:</h3>
-                <p id="subjectivity"></p>
+                <p id="subjectivity" class="result"></p>
                 <h3>Confidence:</h3>
-                <p id="confidence"></p>
+                <p id="confidence" class="result"></p>
                 <h3>Agreement:</h3>
-                <p id="agreement"></p>
+                <p id="agreement" class="result"></p>
                 <h3>Irony:</h3>
-                <p id="irony"></p>
+                <p id="irony" class="result"></p>
             </section>
         </main>
 

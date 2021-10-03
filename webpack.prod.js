@@ -28,6 +28,12 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ]
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
+                use: {
+                    loader: 'file-loader'
+                }
             }
         ]
     },
@@ -37,6 +43,9 @@ module.exports = {
             filename: "./index.html",
         }),
         new MiniCssExtractPlugin({ filename: "[name].css" }),
-        new WorkboxPlugin.GenerateSW()
+        new WorkboxPlugin.GenerateSW({
+            clientsClaim: true,
+            skipWaiting: true
+        }),
     ]
 }
