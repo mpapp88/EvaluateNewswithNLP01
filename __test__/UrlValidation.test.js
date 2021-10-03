@@ -1,4 +1,3 @@
-//import { checkForUrl } from "../src/client/js/UrlValidation";
 import { checkForUrl } from '../src/client';
 import 'babel-polyfill';
 

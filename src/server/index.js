@@ -25,19 +25,19 @@ app.listen(8081, function () {
     console.log('Example app listening on port 8081!')
 })
 
-/*app.get('/', function (req, res) {
+app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
 
 app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
-})*/
+})
 
 //Setting up API
 const baseURL = 'https://api.meaningcloud.com/sentiment-2.1';
 const apiKey = process.env.API_KEY;
 console.log(`Your API Key is ${process.env.API_KEY}`);
-//let userRequest = [];
+
 
 //POST route
 app.post('/addData', async (req, res) => {
