@@ -1,4 +1,3 @@
-//import { response } from "express";
 import { checkForUrl } from "./urlValidation";
 
 function handleSubmit(event) {
@@ -9,7 +8,6 @@ function handleSubmit(event) {
         fetch('http://localhost:8081/addData', {
             method: 'POST',
             credentials: 'same-origin',
-            //mode: 'cors',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({url: url})
         })

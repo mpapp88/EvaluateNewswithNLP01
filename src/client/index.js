@@ -1,4 +1,4 @@
-import { checkForUrl } from './js/UrlValidation'
+import { checkForUrl } from './js/urlValidation'
 import { handleSubmit } from './js/formHandler'
 import { getMockAPI } from './js/getMockAPI'
 
@@ -7,6 +7,7 @@ import './styles/base.scss'
 import './styles/footer.scss'
 import './styles/header.scss'
 
+import header from './styles/img/header.jpg'
 //console.log(checkForName);
 
 export {
